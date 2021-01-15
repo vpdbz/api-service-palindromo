@@ -106,7 +106,7 @@
 	                </includes>
 	                <jdkVersion>1.8</jdkVersion>
 	                <processTypes>
-	                    <web>java $JAVA_OPTS -Dserver.port=$PORT -jar target/${project.properties.artifact.finalName}.jar -Dspring.profiles.active=test</web>
+	                    <web>java $JAVA_OPTS -Dserver.port=$PORT -jar target/${project.properties.artifact.finalName}.jar -Dspring.profiles.active=heroku</web>
 	                </processTypes>
 	            </configuration>
 	        </plugin>
@@ -133,6 +133,12 @@
             <id>docker</id>
             <properties>
                 <spring.profiles.active>docker</spring.profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>heroku</id>
+            <properties>
+                <spring.profiles.active>heroku</spring.profiles.active>
             </properties>
         </profile>
     </profiles>
