@@ -1,3 +1,8 @@
+## Demo
+
+En la siguiente URL se puede ver el funcionamiento del servicio con Swagger
+https://palindromo-api-service.herokuapp.com/swagger-ui.html
+
 ## Scripts Disponibles
 
 Se deben ejecutar en la carpeta `resources\scripts\app`:
